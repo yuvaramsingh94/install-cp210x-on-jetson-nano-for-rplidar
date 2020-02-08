@@ -3,19 +3,9 @@ MIT License
 
 Copyright (c) 2017-2018 Jetsonhacks
 
-There are scripts in this repository which install USB kernel modules which are not in the L4T 28.1 build. The modules:
+The default linux kernel coming with the jetson nano sdk or sdcard installation is missing driver for cp210x. this will not be a problem untill USB to UART chips are connected to jetosn nano . Rplidar A1 is one of the low-cost lidar available in the market best suited for Hobbies looking to build robots. unfortunatly, the missing driver cp210x makes it hard to install and work with Rplidar and other instruments using cp210x chip . the repository from jetsonhacks covers installation of the driver for tx1. in the case of jetson nano the kernel version pose a barrier for using the same compiled version . 
 
-<ul><li>cdc-acm</li>
-<li>cp210x</li>
-<li>ch341</li>
-</ul>
-
-<h2>cdc-acm kernel module</h2>
-Install the CDC ACM Module for the Jetson TX1 or Jetson TX2 Development Kit
-
-This script adds a module for USB Host functions to support Communication Device Class (CDC) Abstract Control Module (ACM) USB Devices.
-
-Typically these USB devices report as ttyACM* (where * is an integer). ACM devices have a lineage that goes back to modems and other network types of devices. However, many USB devices (such as an Arduino) are implemented using this simple USB protocol. The stock L4T 28.1 kernel does not have a CDC ACM module built in to the kernel, or as a separate module. This script adds cdc-acm.ko as a module so that such devices can be accessed through ttyACM*.
+Here i have added a new compiled version of cp210x driver which can be directly installed onto jetson nano
 
 To install:
 
