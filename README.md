@@ -1,4 +1,4 @@
-# installACMModule
+# install cp210x driver on jetson nano for rplidar
 MIT License
 
 Copyright (c) 2017-2018 Jetsonhacks
