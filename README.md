@@ -9,7 +9,7 @@ Here i have added a new compiled version of cp210x driver which can be directly 
 
 To install:
 
-$ sudo ./installCP210X.sh
+$ sudo ./installCP210x.sh
 
 <h3>FEB, 2020</h3>
 Initial Release
